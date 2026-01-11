@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Fira Sans, sans-serif;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: 1px solid #006A50;
+            background: transparent;
+            color: #006A50;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+
+        nav h2 {
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            font-weight: 600;
+        }
+
+        .menu2 {
+            display: none;
+        }
+
+        #banner {
+            padding-top: 20px;
+        }
+
+        .banner-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 70px;
+            gap: 64px;
+            border: none;
+            background: #C6E4D6;
+            border-radius: 24px;
+        }
+
+        .banner-content h3 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #0E0E0E50;
+            margin-bottom: 16px;
+        }
+
+        .banner-content h1 {
+            font-size: 2.62em;
+            margin-bottom: 24px;
+        }
+
+        @media screen and (max-width:1087px) {
+            .banner-container {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width:755px) {
+            .menu {
+                display: none;
+            }
+
+            .menu2 {
+                display: block;
+                font-size: 30px;
+            }
+
+            nav {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        }
+
+        @media screen and (max-width:594px) {
+            .banner-content h1 {
+                font-size: 1.5em;
+            }
+
+            .banner-container {
+                padding: 40px;
+            }
+
+            .banner-img img {
+                width: 280px;
+            }
+
+            .banner-content button {
+                padding: 20px;
+            }
+        }
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <nav class="container">
+        <div class="logo">
+            <h2>To<span style="color: rgb(255, 0, 132);">n</span></h2>
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <button class="btn">Sign In</button>
+        </div>
+
+        <div class="menu2">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+
+    <section id="banner">
+        <div class="banner-container container">
+            <div class="banner-content">
+                <h3>Bangladesh 2.0</h3>
+                <h1>Idea , innovation ,
+                    vision and challenges in New Bangladesh.</h1>
+
+                <button class="btn" style="background-color: #006A50; color: white;">Explore New Bangladesh</button>
+            </div>
+
+            <div class="banner-img">
+                <img src="Image/hero.png" alt="">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
